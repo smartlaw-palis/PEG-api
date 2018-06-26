@@ -11,9 +11,7 @@
     "prestart": "npm run -s build",
     "eslint": "eslint src",
     "coverage": "./node_modules/.bin/babel-cli ./node_modules/.bin/babel-istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R specs",
-    "test": "NODE_ENV=test nodemon app/index.js",
-    "unit-test": "NODE_ENV=test ./node_modules/.bin/mocha specs/unit-tests --compilers js:babel-core/register --recursive --timeout 30000000",
-    "integration-test": "NODE_ENV=test ./node_modules/.bin/mocha specs/integration-tests --compilers js:babel-core/register --recursive --timeout 30000"
+    "test": "NODE_ENV=test nodemon app/index.js"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
